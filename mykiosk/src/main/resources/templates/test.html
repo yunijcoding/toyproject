@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Menu List</title>
+</head>
+<body>
+    <h1>Menu List</h1>
+    <ul>
+        <li th:each="menu : ${menuList}">
+            이름: <p th:text="${menu.menu_name}"></p>
+            가격: <p th:text="${menu.menu_price}"></p>
+        </li>
+    </ul>
+</body>
+</html>
