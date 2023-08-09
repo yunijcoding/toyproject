@@ -7,6 +7,7 @@ import org.springframework.stereotype.Service;
 
 import com.querydsl.jpa.impl.JPAQueryFactory;
 import com.toy.mykiosk.entity.MenuEntity;
+import com.toy.mykiosk.entity.QCartEntity;
 import com.toy.mykiosk.entity.QMenuEntity;
 import com.toy.mykiosk.repository.MenuRepository;
 
@@ -40,3 +41,15 @@ public class MenuService {
 				.fetch();
 	}
 }
+
+
+
+
+
+
+
+
+
+
+
+

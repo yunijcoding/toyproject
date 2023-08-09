@@ -1,0 +1,13 @@
+.card{
+	max-width: 250px;
+}
+
+.card-img-top {
+    max-height: 250px;
+    /* 이미지 비율을 유지한 채로 카드 내부에 맞춤 */
+    object-fit: cover; 
+}
+
+.card-title {
+    font-size: 1.4rem;
+}

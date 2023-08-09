@@ -1,0 +1,290 @@
+2023-08-08 18:25:38,451 [File Watcher] INFO  org.springframework.boot.devtools.autoconfigure.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener(onApplicationEvent:211) - Restarting due to 1 class path change (1 addition, 0 deletions, 0 modifications)
+2023-08-08 18:25:38,598 [Thread-11] INFO  org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean(destroy:650) - Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-08-08 18:25:39,260 [restartedMain] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate(registerRepositoriesIn:138) - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-08-08 18:25:39,312 [restartedMain] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate(registerRepositoriesIn:208) - Finished Spring Data repository scanning in 49 ms. Found 1 JPA repository interfaces.
+2023-08-08 18:25:39,596 [restartedMain] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer(initialize:108) - Tomcat initialized with port(s): 8080 (http)
+2023-08-08 18:25:39,676 [restartedMain] INFO  org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext(prepareWebApplicationContext:291) - Root WebApplicationContext: initialization completed in 835 ms
+2023-08-08 18:25:39,779 [restartedMain] INFO  org.springframework.orm.jpa.persistenceunit.SpringPersistenceUnitInfo(addTransformer:87) - No LoadTimeWeaver setup: ignoring JPA class transformer
+2023-08-08 18:25:39,889 [restartedMain] INFO  org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean(buildNativeEntityManagerFactory:437) - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-08-08 18:25:39,998 [restartedMain] WARN  org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration(openEntityManagerInViewInterceptor:231) - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-08-08 18:25:40,255 [restartedMain] INFO  org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer(startServer:59) - LiveReload server is running on port 35729
+2023-08-08 18:25:40,283 [restartedMain] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer(start:220) - Tomcat started on port(s): 8080 (http) with context path ''
+2023-08-08 18:25:40,296 [restartedMain] INFO  org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener(onApplicationEvent:63) - Condition evaluation unchanged
+2023-08-08 18:26:15,829 [File Watcher] INFO  org.springframework.boot.devtools.autoconfigure.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener(onApplicationEvent:211) - Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2023-08-08 18:26:15,910 [Thread-15] INFO  org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean(destroy:650) - Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-08-08 18:26:16,927 [restartedMain] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate(registerRepositoriesIn:138) - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-08-08 18:26:16,967 [restartedMain] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate(registerRepositoriesIn:208) - Finished Spring Data repository scanning in 39 ms. Found 1 JPA repository interfaces.
+2023-08-08 18:26:17,123 [restartedMain] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer(initialize:108) - Tomcat initialized with port(s): 8080 (http)
+2023-08-08 18:26:17,183 [restartedMain] INFO  org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext(prepareWebApplicationContext:291) - Root WebApplicationContext: initialization completed in 879 ms
+2023-08-08 18:26:17,276 [restartedMain] INFO  org.springframework.orm.jpa.persistenceunit.SpringPersistenceUnitInfo(addTransformer:87) - No LoadTimeWeaver setup: ignoring JPA class transformer
+2023-08-08 18:26:17,322 [restartedMain] ERROR org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean(buildNativeEntityManagerFactory:426) - Failed to initialize JPA EntityManagerFactory: Entity 'com.toy.mykiosk.entity.CartEntity' has no identifier (every '@Entity' class must declare or inherit at least one '@Id' or '@EmbeddedId' property)
+2023-08-08 18:26:17,323 [restartedMain] WARN  org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext(refresh:616) - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Entity 'com.toy.mykiosk.entity.CartEntity' has no identifier (every '@Entity' class must declare or inherit at least one '@Id' or '@EmbeddedId' property)
+2023-08-08 18:26:17,345 [restartedMain] INFO  org.springframework.boot.autoconfigure.logging.ConditionEvaluationReportLogger(logMessage:82) - 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2023-08-08 18:26:17,393 [restartedMain] ERROR org.springframework.boot.SpringApplication(reportFailure:824) - Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Entity 'com.toy.mykiosk.entity.CartEntity' has no identifier (every '@Entity' class must declare or inherit at least one '@Id' or '@EmbeddedId' property)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1770) ~[spring-beans-6.0.11.jar:6.0.11]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:598) ~[spring-beans-6.0.11.jar:6.0.11]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:520) ~[spring-beans-6.0.11.jar:6.0.11]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:326) ~[spring-beans-6.0.11.jar:6.0.11]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-6.0.11.jar:6.0.11]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:324) ~[spring-beans-6.0.11.jar:6.0.11]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200) ~[spring-beans-6.0.11.jar:6.0.11]
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1155) ~[spring-context-6.0.11.jar:6.0.11]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:932) ~[spring-context-6.0.11.jar:6.0.11]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:608) ~[spring-context-6.0.11.jar:6.0.11]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146) ~[spring-boot-3.1.2.jar:3.1.2]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:734) [spring-boot-3.1.2.jar:3.1.2]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:436) [spring-boot-3.1.2.jar:3.1.2]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:312) [spring-boot-3.1.2.jar:3.1.2]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1306) [spring-boot-3.1.2.jar:3.1.2]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1295) [spring-boot-3.1.2.jar:3.1.2]
+	at com.toy.mykiosk.MykioskApplication.main(MykioskApplication.java:10) [main/:?]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:?]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[?:?]
+	at jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:?]
+	at java.lang.reflect.Method.invoke(Method.java:568) ~[?:?]
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:50) [spring-boot-devtools-3.1.2.jar:3.1.2]
+Caused by: org.hibernate.AnnotationException: Entity 'com.toy.mykiosk.entity.CartEntity' has no identifier (every '@Entity' class must declare or inherit at least one '@Id' or '@EmbeddedId' property)
+	at org.hibernate.boot.model.internal.InheritanceState.determineDefaultAccessType(InheritanceState.java:279) ~[hibernate-core-6.2.6.Final.jar:6.2.6.Final]
+	at org.hibernate.boot.model.internal.InheritanceState.getElementsToProcess(InheritanceState.java:215) ~[hibernate-core-6.2.6.Final.jar:6.2.6.Final]
+	at org.hibernate.boot.model.internal.InheritanceState.postProcess(InheritanceState.java:160) ~[hibernate-core-6.2.6.Final.jar:6.2.6.Final]
+	at org.hibernate.boot.model.internal.EntityBinder.handleIdentifier(EntityBinder.java:293) ~[hibernate-core-6.2.6.Final.jar:6.2.6.Final]
+	at org.hibernate.boot.model.internal.EntityBinder.bindEntityClass(EntityBinder.java:228) ~[hibernate-core-6.2.6.Final.jar:6.2.6.Final]
+	at org.hibernate.boot.model.internal.AnnotationBinder.bindClass(AnnotationBinder.java:417) ~[hibernate-core-6.2.6.Final.jar:6.2.6.Final]
+	at org.hibernate.boot.model.source.internal.annotations.AnnotationMetadataSourceProcessorImpl.processEntityHierarchies(AnnotationMetadataSourceProcessorImpl.java:255) ~[hibernate-core-6.2.6.Final.jar:6.2.6.Final]
+	at org.hibernate.boot.model.process.spi.MetadataBuildingProcess$1.processEntityHierarchies(MetadataBuildingProcess.java:275) ~[hibernate-core-6.2.6.Final.jar:6.2.6.Final]
+	at org.hibernate.boot.model.process.spi.MetadataBuildingProcess.complete(MetadataBuildingProcess.java:318) ~[hibernate-core-6.2.6.Final.jar:6.2.6.Final]
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.metadata(EntityManagerFactoryBuilderImpl.java:1380) ~[hibernate-core-6.2.6.Final.jar:6.2.6.Final]
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:1451) ~[hibernate-core-6.2.6.Final.jar:6.2.6.Final]
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:75) ~[spring-orm-6.0.11.jar:6.0.11]
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:376) ~[spring-orm-6.0.11.jar:6.0.11]
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:409) ~[spring-orm-6.0.11.jar:6.0.11]
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:396) ~[spring-orm-6.0.11.jar:6.0.11]
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:352) ~[spring-orm-6.0.11.jar:6.0.11]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1817) ~[spring-beans-6.0.11.jar:6.0.11]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1766) ~[spring-beans-6.0.11.jar:6.0.11]
+	... 21 more
+2023-08-08 18:26:20,504 [restartedMain] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate(registerRepositoriesIn:138) - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-08-08 18:26:20,548 [restartedMain] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate(registerRepositoriesIn:208) - Finished Spring Data repository scanning in 42 ms. Found 1 JPA repository interfaces.
+2023-08-08 18:26:20,714 [restartedMain] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer(initialize:108) - Tomcat initialized with port(s): 8080 (http)
+2023-08-08 18:26:20,800 [restartedMain] INFO  org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext(prepareWebApplicationContext:291) - Root WebApplicationContext: initialization completed in 651 ms
+2023-08-08 18:26:20,889 [restartedMain] INFO  org.springframework.orm.jpa.persistenceunit.SpringPersistenceUnitInfo(addTransformer:87) - No LoadTimeWeaver setup: ignoring JPA class transformer
+2023-08-08 18:26:20,916 [restartedMain] ERROR org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean(buildNativeEntityManagerFactory:426) - Failed to initialize JPA EntityManagerFactory: Entity 'com.toy.mykiosk.entity.CartEntity' has no identifier (every '@Entity' class must declare or inherit at least one '@Id' or '@EmbeddedId' property)
+2023-08-08 18:26:20,917 [restartedMain] WARN  org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext(refresh:616) - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Entity 'com.toy.mykiosk.entity.CartEntity' has no identifier (every '@Entity' class must declare or inherit at least one '@Id' or '@EmbeddedId' property)
+2023-08-08 18:26:20,932 [restartedMain] INFO  org.springframework.boot.autoconfigure.logging.ConditionEvaluationReportLogger(logMessage:82) - 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2023-08-08 18:26:20,940 [restartedMain] ERROR org.springframework.boot.SpringApplication(reportFailure:824) - Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Entity 'com.toy.mykiosk.entity.CartEntity' has no identifier (every '@Entity' class must declare or inherit at least one '@Id' or '@EmbeddedId' property)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1770) ~[spring-beans-6.0.11.jar:6.0.11]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:598) ~[spring-beans-6.0.11.jar:6.0.11]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:520) ~[spring-beans-6.0.11.jar:6.0.11]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:326) ~[spring-beans-6.0.11.jar:6.0.11]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-6.0.11.jar:6.0.11]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:324) ~[spring-beans-6.0.11.jar:6.0.11]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200) ~[spring-beans-6.0.11.jar:6.0.11]
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1155) ~[spring-context-6.0.11.jar:6.0.11]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:932) ~[spring-context-6.0.11.jar:6.0.11]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:608) ~[spring-context-6.0.11.jar:6.0.11]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146) ~[spring-boot-3.1.2.jar:3.1.2]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:734) [spring-boot-3.1.2.jar:3.1.2]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:436) [spring-boot-3.1.2.jar:3.1.2]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:312) [spring-boot-3.1.2.jar:3.1.2]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1306) [spring-boot-3.1.2.jar:3.1.2]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1295) [spring-boot-3.1.2.jar:3.1.2]
+	at com.toy.mykiosk.MykioskApplication.main(MykioskApplication.java:10) [main/:?]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:?]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[?:?]
+	at jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:?]
+	at java.lang.reflect.Method.invoke(Method.java:568) ~[?:?]
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:50) [spring-boot-devtools-3.1.2.jar:3.1.2]
+Caused by: org.hibernate.AnnotationException: Entity 'com.toy.mykiosk.entity.CartEntity' has no identifier (every '@Entity' class must declare or inherit at least one '@Id' or '@EmbeddedId' property)
+	at org.hibernate.boot.model.internal.InheritanceState.determineDefaultAccessType(InheritanceState.java:279) ~[hibernate-core-6.2.6.Final.jar:6.2.6.Final]
+	at org.hibernate.boot.model.internal.InheritanceState.getElementsToProcess(InheritanceState.java:215) ~[hibernate-core-6.2.6.Final.jar:6.2.6.Final]
+	at org.hibernate.boot.model.internal.InheritanceState.postProcess(InheritanceState.java:160) ~[hibernate-core-6.2.6.Final.jar:6.2.6.Final]
+	at org.hibernate.boot.model.internal.EntityBinder.handleIdentifier(EntityBinder.java:293) ~[hibernate-core-6.2.6.Final.jar:6.2.6.Final]
+	at org.hibernate.boot.model.internal.EntityBinder.bindEntityClass(EntityBinder.java:228) ~[hibernate-core-6.2.6.Final.jar:6.2.6.Final]
+	at org.hibernate.boot.model.internal.AnnotationBinder.bindClass(AnnotationBinder.java:417) ~[hibernate-core-6.2.6.Final.jar:6.2.6.Final]
+	at org.hibernate.boot.model.source.internal.annotations.AnnotationMetadataSourceProcessorImpl.processEntityHierarchies(AnnotationMetadataSourceProcessorImpl.java:255) ~[hibernate-core-6.2.6.Final.jar:6.2.6.Final]
+	at org.hibernate.boot.model.process.spi.MetadataBuildingProcess$1.processEntityHierarchies(MetadataBuildingProcess.java:275) ~[hibernate-core-6.2.6.Final.jar:6.2.6.Final]
+	at org.hibernate.boot.model.process.spi.MetadataBuildingProcess.complete(MetadataBuildingProcess.java:318) ~[hibernate-core-6.2.6.Final.jar:6.2.6.Final]
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.metadata(EntityManagerFactoryBuilderImpl.java:1380) ~[hibernate-core-6.2.6.Final.jar:6.2.6.Final]
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:1451) ~[hibernate-core-6.2.6.Final.jar:6.2.6.Final]
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:75) ~[spring-orm-6.0.11.jar:6.0.11]
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:376) ~[spring-orm-6.0.11.jar:6.0.11]
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:409) ~[spring-orm-6.0.11.jar:6.0.11]
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:396) ~[spring-orm-6.0.11.jar:6.0.11]
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:352) ~[spring-orm-6.0.11.jar:6.0.11]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1817) ~[spring-beans-6.0.11.jar:6.0.11]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1766) ~[spring-beans-6.0.11.jar:6.0.11]
+	... 21 more
+2023-08-08 18:26:28,730 [restartedMain] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate(registerRepositoriesIn:138) - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-08-08 18:26:28,775 [restartedMain] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate(registerRepositoriesIn:208) - Finished Spring Data repository scanning in 44 ms. Found 1 JPA repository interfaces.
+2023-08-08 18:26:28,925 [restartedMain] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer(initialize:108) - Tomcat initialized with port(s): 8080 (http)
+2023-08-08 18:26:28,993 [restartedMain] INFO  org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext(prepareWebApplicationContext:291) - Root WebApplicationContext: initialization completed in 843 ms
+2023-08-08 18:26:29,097 [restartedMain] INFO  org.springframework.orm.jpa.persistenceunit.SpringPersistenceUnitInfo(addTransformer:87) - No LoadTimeWeaver setup: ignoring JPA class transformer
+2023-08-08 18:26:29,126 [restartedMain] ERROR org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean(buildNativeEntityManagerFactory:426) - Failed to initialize JPA EntityManagerFactory: Entity 'com.toy.mykiosk.entity.CartEntity' has no identifier (every '@Entity' class must declare or inherit at least one '@Id' or '@EmbeddedId' property)
+2023-08-08 18:26:29,127 [restartedMain] WARN  org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext(refresh:616) - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Entity 'com.toy.mykiosk.entity.CartEntity' has no identifier (every '@Entity' class must declare or inherit at least one '@Id' or '@EmbeddedId' property)
+2023-08-08 18:26:29,144 [restartedMain] INFO  org.springframework.boot.autoconfigure.logging.ConditionEvaluationReportLogger(logMessage:82) - 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2023-08-08 18:26:29,151 [restartedMain] ERROR org.springframework.boot.SpringApplication(reportFailure:824) - Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Entity 'com.toy.mykiosk.entity.CartEntity' has no identifier (every '@Entity' class must declare or inherit at least one '@Id' or '@EmbeddedId' property)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1770) ~[spring-beans-6.0.11.jar:6.0.11]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:598) ~[spring-beans-6.0.11.jar:6.0.11]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:520) ~[spring-beans-6.0.11.jar:6.0.11]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:326) ~[spring-beans-6.0.11.jar:6.0.11]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-6.0.11.jar:6.0.11]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:324) ~[spring-beans-6.0.11.jar:6.0.11]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200) ~[spring-beans-6.0.11.jar:6.0.11]
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1155) ~[spring-context-6.0.11.jar:6.0.11]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:932) ~[spring-context-6.0.11.jar:6.0.11]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:608) ~[spring-context-6.0.11.jar:6.0.11]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146) ~[spring-boot-3.1.2.jar:3.1.2]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:734) [spring-boot-3.1.2.jar:3.1.2]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:436) [spring-boot-3.1.2.jar:3.1.2]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:312) [spring-boot-3.1.2.jar:3.1.2]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1306) [spring-boot-3.1.2.jar:3.1.2]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1295) [spring-boot-3.1.2.jar:3.1.2]
+	at com.toy.mykiosk.MykioskApplication.main(MykioskApplication.java:10) [main/:?]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:?]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[?:?]
+	at jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:?]
+	at java.lang.reflect.Method.invoke(Method.java:568) ~[?:?]
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:50) [spring-boot-devtools-3.1.2.jar:3.1.2]
+Caused by: org.hibernate.AnnotationException: Entity 'com.toy.mykiosk.entity.CartEntity' has no identifier (every '@Entity' class must declare or inherit at least one '@Id' or '@EmbeddedId' property)
+	at org.hibernate.boot.model.internal.InheritanceState.determineDefaultAccessType(InheritanceState.java:279) ~[hibernate-core-6.2.6.Final.jar:6.2.6.Final]
+	at org.hibernate.boot.model.internal.InheritanceState.getElementsToProcess(InheritanceState.java:215) ~[hibernate-core-6.2.6.Final.jar:6.2.6.Final]
+	at org.hibernate.boot.model.internal.InheritanceState.postProcess(InheritanceState.java:160) ~[hibernate-core-6.2.6.Final.jar:6.2.6.Final]
+	at org.hibernate.boot.model.internal.EntityBinder.handleIdentifier(EntityBinder.java:293) ~[hibernate-core-6.2.6.Final.jar:6.2.6.Final]
+	at org.hibernate.boot.model.internal.EntityBinder.bindEntityClass(EntityBinder.java:228) ~[hibernate-core-6.2.6.Final.jar:6.2.6.Final]
+	at org.hibernate.boot.model.internal.AnnotationBinder.bindClass(AnnotationBinder.java:417) ~[hibernate-core-6.2.6.Final.jar:6.2.6.Final]
+	at org.hibernate.boot.model.source.internal.annotations.AnnotationMetadataSourceProcessorImpl.processEntityHierarchies(AnnotationMetadataSourceProcessorImpl.java:255) ~[hibernate-core-6.2.6.Final.jar:6.2.6.Final]
+	at org.hibernate.boot.model.process.spi.MetadataBuildingProcess$1.processEntityHierarchies(MetadataBuildingProcess.java:275) ~[hibernate-core-6.2.6.Final.jar:6.2.6.Final]
+	at org.hibernate.boot.model.process.spi.MetadataBuildingProcess.complete(MetadataBuildingProcess.java:318) ~[hibernate-core-6.2.6.Final.jar:6.2.6.Final]
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.metadata(EntityManagerFactoryBuilderImpl.java:1380) ~[hibernate-core-6.2.6.Final.jar:6.2.6.Final]
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:1451) ~[hibernate-core-6.2.6.Final.jar:6.2.6.Final]
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:75) ~[spring-orm-6.0.11.jar:6.0.11]
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:376) ~[spring-orm-6.0.11.jar:6.0.11]
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:409) ~[spring-orm-6.0.11.jar:6.0.11]
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:396) ~[spring-orm-6.0.11.jar:6.0.11]
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:352) ~[spring-orm-6.0.11.jar:6.0.11]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1817) ~[spring-beans-6.0.11.jar:6.0.11]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1766) ~[spring-beans-6.0.11.jar:6.0.11]
+	... 21 more
+2023-08-08 18:27:15,856 [restartedMain] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate(registerRepositoriesIn:138) - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-08-08 18:27:15,903 [restartedMain] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate(registerRepositoriesIn:208) - Finished Spring Data repository scanning in 46 ms. Found 1 JPA repository interfaces.
+2023-08-08 18:27:16,051 [restartedMain] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer(initialize:108) - Tomcat initialized with port(s): 8080 (http)
+2023-08-08 18:27:16,103 [restartedMain] INFO  org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext(prepareWebApplicationContext:291) - Root WebApplicationContext: initialization completed in 565 ms
+2023-08-08 18:27:16,228 [restartedMain] INFO  org.springframework.orm.jpa.persistenceunit.SpringPersistenceUnitInfo(addTransformer:87) - No LoadTimeWeaver setup: ignoring JPA class transformer
+2023-08-08 18:27:16,364 [restartedMain] INFO  org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean(buildNativeEntityManagerFactory:437) - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-08-08 18:27:16,478 [restartedMain] WARN  org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration(openEntityManagerInViewInterceptor:231) - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-08-08 18:27:16,677 [restartedMain] INFO  org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer(startServer:59) - LiveReload server is running on port 35729
+2023-08-08 18:27:16,709 [restartedMain] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer(start:220) - Tomcat started on port(s): 8080 (http) with context path ''
+2023-08-08 18:27:16,724 [restartedMain] INFO  org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener(onApplicationEvent:63) - Condition evaluation unchanged
+2023-08-08 18:35:27,992 [File Watcher] INFO  org.springframework.boot.devtools.autoconfigure.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener(onApplicationEvent:211) - Restarting due to 8 class path changes (0 additions, 1 deletion, 7 modifications)
+2023-08-08 18:35:28,077 [Thread-19] INFO  org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean(destroy:650) - Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-08-08 18:35:28,689 [restartedMain] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate(registerRepositoriesIn:138) - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-08-08 18:35:28,766 [restartedMain] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate(registerRepositoriesIn:208) - Finished Spring Data repository scanning in 75 ms. Found 1 JPA repository interfaces.
+2023-08-08 18:35:29,067 [restartedMain] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer(initialize:108) - Tomcat initialized with port(s): 8080 (http)
+2023-08-08 18:35:29,185 [restartedMain] INFO  org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext(prepareWebApplicationContext:291) - Root WebApplicationContext: initialization completed in 866 ms
+2023-08-08 18:35:29,370 [restartedMain] INFO  org.springframework.orm.jpa.persistenceunit.SpringPersistenceUnitInfo(addTransformer:87) - No LoadTimeWeaver setup: ignoring JPA class transformer
+2023-08-08 18:35:29,607 [restartedMain] INFO  org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean(buildNativeEntityManagerFactory:437) - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-08-08 18:35:29,760 [restartedMain] WARN  org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration(openEntityManagerInViewInterceptor:231) - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-08-08 18:35:29,990 [restartedMain] INFO  org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer(startServer:59) - LiveReload server is running on port 35729
+2023-08-08 18:35:30,024 [restartedMain] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer(start:220) - Tomcat started on port(s): 8080 (http) with context path ''
+2023-08-08 18:35:30,037 [restartedMain] INFO  org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener(onApplicationEvent:63) - Condition evaluation unchanged
+2023-08-08 18:41:25,163 [File Watcher] INFO  org.springframework.boot.devtools.autoconfigure.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener(onApplicationEvent:211) - Restarting due to 8 class path changes (1 addition, 0 deletions, 7 modifications)
+2023-08-08 18:41:25,258 [Thread-32] INFO  org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean(destroy:650) - Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-08-08 18:41:26,251 [restartedMain] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate(registerRepositoriesIn:138) - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-08-08 18:41:26,350 [restartedMain] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate(registerRepositoriesIn:208) - Finished Spring Data repository scanning in 97 ms. Found 1 JPA repository interfaces.
+2023-08-08 18:41:26,623 [restartedMain] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer(initialize:108) - Tomcat initialized with port(s): 8080 (http)
+2023-08-08 18:41:26,687 [restartedMain] INFO  org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext(prepareWebApplicationContext:291) - Root WebApplicationContext: initialization completed in 1116 ms
+2023-08-08 18:41:26,809 [restartedMain] INFO  org.springframework.orm.jpa.persistenceunit.SpringPersistenceUnitInfo(addTransformer:87) - No LoadTimeWeaver setup: ignoring JPA class transformer
+2023-08-08 18:41:26,924 [restartedMain] INFO  org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean(buildNativeEntityManagerFactory:437) - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-08-08 18:41:27,194 [restartedMain] WARN  org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration(openEntityManagerInViewInterceptor:231) - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-08-08 18:41:27,459 [restartedMain] INFO  org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer(startServer:59) - LiveReload server is running on port 35729
+2023-08-08 18:41:27,476 [restartedMain] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer(start:220) - Tomcat started on port(s): 8080 (http) with context path ''
+2023-08-08 18:41:27,486 [restartedMain] INFO  org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener(onApplicationEvent:63) - Condition evaluation unchanged
+2023-08-08 18:42:14,681 [Test worker] INFO  org.springframework.test.context.support.AnnotationConfigContextLoaderUtils(detectDefaultConfigurationClasses:83) - Could not detect default configuration classes for test class [com.toy.mykiosk.MykioskApplicationTests]: MykioskApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2023-08-08 18:42:15,062 [Test worker] INFO  org.springframework.boot.test.context.SpringBootTestContextBootstrapper(getOrFindConfigurationClasses:248) - Found @SpringBootConfiguration com.toy.mykiosk.MykioskApplication for test class com.toy.mykiosk.MykioskApplicationTests
+2023-08-08 18:42:17,504 [Test worker] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate(registerRepositoriesIn:138) - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-08-08 18:42:17,687 [Test worker] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate(registerRepositoriesIn:208) - Finished Spring Data repository scanning in 162 ms. Found 1 JPA repository interfaces.
+2023-08-08 18:42:19,921 [Test worker] INFO  org.springframework.orm.jpa.persistenceunit.SpringPersistenceUnitInfo(addTransformer:87) - No LoadTimeWeaver setup: ignoring JPA class transformer
+2023-08-08 18:42:24,197 [Test worker] INFO  org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean(buildNativeEntityManagerFactory:437) - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-08-08 18:42:25,201 [Test worker] WARN  org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration(openEntityManagerInViewInterceptor:231) - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-08-08 18:42:27,527 [SpringApplicationShutdownHook] INFO  org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean(destroy:650) - Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-08-08 18:42:43,526 [File Watcher] INFO  org.springframework.boot.devtools.autoconfigure.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener(onApplicationEvent:211) - Restarting due to 2 class path changes (1 addition, 0 deletions, 1 modification)
+2023-08-08 18:42:43,634 [Thread-36] INFO  org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean(destroy:650) - Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-08-08 18:42:44,443 [restartedMain] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate(registerRepositoriesIn:138) - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-08-08 18:42:44,499 [restartedMain] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate(registerRepositoriesIn:208) - Finished Spring Data repository scanning in 54 ms. Found 1 JPA repository interfaces.
+2023-08-08 18:42:44,679 [restartedMain] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer(initialize:108) - Tomcat initialized with port(s): 8080 (http)
+2023-08-08 18:42:44,750 [restartedMain] INFO  org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext(prepareWebApplicationContext:291) - Root WebApplicationContext: initialization completed in 871 ms
+2023-08-08 18:42:44,860 [restartedMain] INFO  org.springframework.orm.jpa.persistenceunit.SpringPersistenceUnitInfo(addTransformer:87) - No LoadTimeWeaver setup: ignoring JPA class transformer
+2023-08-08 18:42:44,987 [restartedMain] INFO  org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean(buildNativeEntityManagerFactory:437) - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-08-08 18:42:45,099 [restartedMain] WARN  org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration(openEntityManagerInViewInterceptor:231) - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-08-08 18:42:45,279 [restartedMain] INFO  org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer(startServer:59) - LiveReload server is running on port 35729
+2023-08-08 18:42:45,306 [restartedMain] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer(start:220) - Tomcat started on port(s): 8080 (http) with context path ''
+2023-08-08 18:42:45,321 [restartedMain] INFO  org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener(onApplicationEvent:63) - Condition evaluation unchanged
+2023-08-08 18:43:26,637 [File Watcher] INFO  org.springframework.boot.devtools.autoconfigure.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener(onApplicationEvent:211) - Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2023-08-08 18:43:26,692 [Thread-40] INFO  org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean(destroy:650) - Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-08-08 18:43:27,354 [restartedMain] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate(registerRepositoriesIn:138) - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-08-08 18:43:27,433 [restartedMain] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate(registerRepositoriesIn:208) - Finished Spring Data repository scanning in 78 ms. Found 1 JPA repository interfaces.
+2023-08-08 18:43:27,637 [restartedMain] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer(initialize:108) - Tomcat initialized with port(s): 8080 (http)
+2023-08-08 18:43:27,703 [restartedMain] INFO  org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext(prepareWebApplicationContext:291) - Root WebApplicationContext: initialization completed in 777 ms
+2023-08-08 18:43:27,782 [restartedMain] INFO  org.springframework.orm.jpa.persistenceunit.SpringPersistenceUnitInfo(addTransformer:87) - No LoadTimeWeaver setup: ignoring JPA class transformer
+2023-08-08 18:43:27,898 [restartedMain] INFO  org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean(buildNativeEntityManagerFactory:437) - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-08-08 18:43:27,987 [restartedMain] WARN  org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration(openEntityManagerInViewInterceptor:231) - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-08-08 18:43:28,160 [restartedMain] INFO  org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer(startServer:59) - LiveReload server is running on port 35729
+2023-08-08 18:43:28,190 [restartedMain] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer(start:220) - Tomcat started on port(s): 8080 (http) with context path ''
+2023-08-08 18:43:28,205 [restartedMain] INFO  org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener(onApplicationEvent:63) - Condition evaluation unchanged
+2023-08-08 18:43:33,005 [File Watcher] INFO  org.springframework.boot.devtools.autoconfigure.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener(onApplicationEvent:211) - Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2023-08-08 18:43:33,092 [Thread-44] INFO  org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean(destroy:650) - Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-08-08 18:43:34,129 [restartedMain] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate(registerRepositoriesIn:138) - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-08-08 18:43:34,224 [restartedMain] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate(registerRepositoriesIn:208) - Finished Spring Data repository scanning in 93 ms. Found 1 JPA repository interfaces.
+2023-08-08 18:43:34,474 [restartedMain] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer(initialize:108) - Tomcat initialized with port(s): 8080 (http)
+2023-08-08 18:43:34,533 [restartedMain] INFO  org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext(prepareWebApplicationContext:291) - Root WebApplicationContext: initialization completed in 1133 ms
+2023-08-08 18:43:34,627 [restartedMain] INFO  org.springframework.orm.jpa.persistenceunit.SpringPersistenceUnitInfo(addTransformer:87) - No LoadTimeWeaver setup: ignoring JPA class transformer
+2023-08-08 18:43:34,720 [restartedMain] INFO  org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean(buildNativeEntityManagerFactory:437) - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-08-08 18:43:34,862 [restartedMain] WARN  org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration(openEntityManagerInViewInterceptor:231) - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-08-08 18:43:35,104 [restartedMain] INFO  org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer(startServer:59) - LiveReload server is running on port 35729
+2023-08-08 18:43:35,131 [restartedMain] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer(start:220) - Tomcat started on port(s): 8080 (http) with context path ''
+2023-08-08 18:43:35,145 [restartedMain] INFO  org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener(onApplicationEvent:63) - Condition evaluation unchanged
+2023-08-08 18:48:52,431 [File Watcher] INFO  org.springframework.boot.devtools.autoconfigure.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener(onApplicationEvent:211) - Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2023-08-08 18:48:52,540 [Thread-48] INFO  org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean(destroy:650) - Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-08-08 18:48:53,343 [restartedMain] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate(registerRepositoriesIn:138) - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-08-08 18:48:53,395 [restartedMain] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate(registerRepositoriesIn:208) - Finished Spring Data repository scanning in 51 ms. Found 1 JPA repository interfaces.
+2023-08-08 18:48:53,588 [restartedMain] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer(initialize:108) - Tomcat initialized with port(s): 8080 (http)
+2023-08-08 18:48:53,667 [restartedMain] INFO  org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext(prepareWebApplicationContext:291) - Root WebApplicationContext: initialization completed in 883 ms
+2023-08-08 18:48:53,813 [restartedMain] INFO  org.springframework.orm.jpa.persistenceunit.SpringPersistenceUnitInfo(addTransformer:87) - No LoadTimeWeaver setup: ignoring JPA class transformer
+2023-08-08 18:48:53,924 [restartedMain] INFO  org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean(buildNativeEntityManagerFactory:437) - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-08-08 18:48:54,028 [restartedMain] WARN  org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration(openEntityManagerInViewInterceptor:231) - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-08-08 18:48:54,177 [restartedMain] INFO  org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer(startServer:59) - LiveReload server is running on port 35729
+2023-08-08 18:48:54,196 [restartedMain] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer(start:220) - Tomcat started on port(s): 8080 (http) with context path ''
+2023-08-08 18:48:54,208 [restartedMain] INFO  org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener(onApplicationEvent:63) - Condition evaluation unchanged
+2023-08-08 18:50:08,082 [File Watcher] INFO  org.springframework.boot.devtools.autoconfigure.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener(onApplicationEvent:211) - Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2023-08-08 18:50:08,178 [Thread-52] INFO  org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean(destroy:650) - Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-08-08 18:50:09,125 [restartedMain] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate(registerRepositoriesIn:138) - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-08-08 18:50:09,170 [restartedMain] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate(registerRepositoriesIn:208) - Finished Spring Data repository scanning in 45 ms. Found 1 JPA repository interfaces.
+2023-08-08 18:50:09,319 [restartedMain] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer(initialize:108) - Tomcat initialized with port(s): 8080 (http)
+2023-08-08 18:50:09,386 [restartedMain] INFO  org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext(prepareWebApplicationContext:291) - Root WebApplicationContext: initialization completed in 790 ms
+2023-08-08 18:50:09,470 [restartedMain] INFO  org.springframework.orm.jpa.persistenceunit.SpringPersistenceUnitInfo(addTransformer:87) - No LoadTimeWeaver setup: ignoring JPA class transformer
+2023-08-08 18:50:09,685 [restartedMain] INFO  org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean(buildNativeEntityManagerFactory:437) - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-08-08 18:50:09,795 [restartedMain] WARN  org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration(openEntityManagerInViewInterceptor:231) - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-08-08 18:50:09,953 [restartedMain] INFO  org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer(startServer:59) - LiveReload server is running on port 35729
+2023-08-08 18:50:09,991 [restartedMain] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer(start:220) - Tomcat started on port(s): 8080 (http) with context path ''
+2023-08-08 18:50:10,005 [restartedMain] INFO  org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener(onApplicationEvent:63) - Condition evaluation unchanged
+2023-08-08 18:50:23,803 [File Watcher] INFO  org.springframework.boot.devtools.autoconfigure.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener(onApplicationEvent:211) - Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2023-08-08 18:50:23,919 [Thread-56] INFO  org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean(destroy:650) - Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-08-08 18:50:24,468 [restartedMain] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate(registerRepositoriesIn:138) - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-08-08 18:50:24,515 [restartedMain] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate(registerRepositoriesIn:208) - Finished Spring Data repository scanning in 46 ms. Found 1 JPA repository interfaces.
+2023-08-08 18:50:24,677 [restartedMain] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer(initialize:108) - Tomcat initialized with port(s): 8080 (http)
+2023-08-08 18:50:24,736 [restartedMain] INFO  org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext(prepareWebApplicationContext:291) - Root WebApplicationContext: initialization completed in 607 ms
+2023-08-08 18:50:24,808 [restartedMain] INFO  org.springframework.orm.jpa.persistenceunit.SpringPersistenceUnitInfo(addTransformer:87) - No LoadTimeWeaver setup: ignoring JPA class transformer
+2023-08-08 18:50:24,880 [restartedMain] INFO  org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean(buildNativeEntityManagerFactory:437) - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-08-08 18:50:24,986 [restartedMain] WARN  org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration(openEntityManagerInViewInterceptor:231) - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-08-08 18:50:25,159 [restartedMain] INFO  org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer(startServer:59) - LiveReload server is running on port 35729
+2023-08-08 18:50:25,184 [restartedMain] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer(start:220) - Tomcat started on port(s): 8080 (http) with context path ''
+2023-08-08 18:50:25,196 [restartedMain] INFO  org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener(onApplicationEvent:63) - Condition evaluation unchanged

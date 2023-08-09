@@ -8,11 +8,19 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseBody;
 
+import com.querydsl.core.Tuple;
+import com.toy.mykiosk.dto.MenuCartDTO;
+import com.toy.mykiosk.entity.CartEntity;
 import com.toy.mykiosk.entity.MenuEntity;
+import com.toy.mykiosk.service.CartService;
 import com.toy.mykiosk.service.MenuService;
+
+import jakarta.websocket.server.PathParam;
 
 @Controller
 @RequestMapping("/mykiosk")
@@ -21,17 +29,20 @@ public class MainController {
 	@Autowired
 	private MenuService menuService;
 	
+	@Autowired
+	private CartService cartService;
+	
 	//Log4j2 Logger
 	private final Logger logger = LogManager.getLogger(MainController.class);
 	
-	//클라이언트에게 JSON 형식으로 반환
+	//(TEST) 클라이언트에게 JSON 형식으로 반환
 	@GetMapping("/test")
 	@ResponseBody
 	public List<MenuEntity> getAll(){
 		return this.menuService.getAll();
 	}
 	
-	//model에 담아서 반환 => template에서 thymeleaf를 이용해 사용 가능
+	//(TEST) model에 담아서 반환 => template에서 thymeleaf를 이용해 사용 가능
 	@GetMapping("/test1")
 	public String getAllMenu(Model model) {
 		
@@ -45,10 +56,86 @@ public class MainController {
 		return "test";
 	}
 	
-	
+	//(TEST) queryDSL test
 	@GetMapping("/test2")
 	@ResponseBody
 	public List<MenuEntity> getMenuByPrice(){
 		return this.menuService.getMenuByPrice(2000);
 	}
+	
+	//===============start===============
+	// 1. home
+	@GetMapping("/")
+	public String home() {
+		return "home";
+	}
+	
+	// 2. main list
+	@GetMapping("/menu-list")
+	public String totMenuList(Model model) {
+		List<MenuEntity> menuList = this.menuService.getAllMenu();
+		model.addAttribute("menuList", menuList);
+		return "main_list";
+	}
+	
+	//(TEST) 3. cart로 insert 해보기
+	// 1) get 방식으로 fetch 요청을 보냈을 때 ~~add?menu_id=3 이렇게 url이 오면
+	// @RequestParam 어노테이션으로 받고 괄호 안에 ?menu_id와 같은 변수를 사용한다!
+	// 2) html을 보내려면 @ResponseBody 어노테이션을 추가하면 안된다!!!
+//	@GetMapping("/add")
+//	public String addToCart(@RequestParam("menu_id") Integer menu_id,
+//			Model model) {
+//		System.out.println("menu_id = " + menu_id);
+//		try {
+//			this.cartService.addToCart(menu_id);
+//			
+//			List<CartEntity> cartList = this.cartService.getAllCart();
+//			
+//			model.addAttribute("cartList", cartList);
+//			
+//			return "cart_list";
+//		}
+//		catch(Exception e) {
+//			return "Error adding to cart: " + e.getMessage();
+//		}
+//	}
+	
+	@GetMapping("/add")
+	public String addToCart(@RequestParam("menu_id") Integer menu_id,
+			Model model) {
+		System.out.println("menu_id = " + menu_id);
+		try {
+//			this.cartService.addToCart(menu_id);
+			
+			List<MenuCartDTO> cartMenuJoin = this.cartService.getAllMenuJoinCart();
+			
+//			for(MenuCartDTO mcdto : cartMenuJoin) {
+//				System.out.println(mcdto);
+//			}
+			
+			model.addAttribute("cartMenuJoinList", cartMenuJoin);
+			
+			return "cart_list";
+		}
+		catch(Exception e) {
+			return "Error adding to cart: " + e.getMessage();
+		}
+	}
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
