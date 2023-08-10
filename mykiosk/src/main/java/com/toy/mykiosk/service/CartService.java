@@ -1,11 +1,14 @@
 package com.toy.mykiosk.service;
 
 import java.util.List;
+import java.util.Set;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.jpa.repository.Modifying;
 import org.springframework.stereotype.Service;
 
 import com.querydsl.core.types.Projections;
+import com.querydsl.core.types.dsl.Expressions;
 import com.querydsl.jpa.impl.JPAQueryFactory;
 import com.toy.mykiosk.dto.MenuCartDTO;
 import com.toy.mykiosk.entity.CartEntity;
@@ -58,13 +61,68 @@ public class CartService {
 				//Projections.constructor를 사용하여 MenuCartDTO를 생성
 				//중복을 허용하지 않으려면 Projections.bean 사용
 				//MenuCartDTO 생성자의 변수 순서랑 일치해야 한다!!!!!
+				//count(menu_id_pk) menu_cnt => qCart.count().as("menu_cnt")
+				.select(Projections.fields(MenuCartDTO.class,
+						qCart.menu_id_fk, qMenu.menu_name, qMenu.menu_price,
+						qCart.menu_id_fk.count().as("menu_cnt"), qMenu.menu_img, qMenu.menu_info, qCart.cart_id_pk))
+				//from 메서드에는 엔티티가 아닌 프로젝션을 사용해야 함
+//				.from(qCart)
+//				.innerJoin(qMenu).on(qMenu.menu_id_pk.eq(qCart.menu_id_fk))
+				.from(qCart, qMenu)
+				.where(qCart.menu_id_fk.eq(qMenu.menu_id_pk))
+				.groupBy(qMenu.menu_id_pk, qMenu.menu_name, qMenu.menu_price, qMenu.menu_img, qMenu.menu_info, qCart.cart_id_pk)
+				.fetch();
+	}
+	
+	
+	//(TEST)
+	public List<MenuCartDTO> getAllMenuJoinCartConstructor(){
+		QCartEntity qCart = QCartEntity.cartEntity;
+		QMenuEntity qMenu = QMenuEntity.menuEntity;
+		
+		return jpaQueryFactory
 				.select(Projections.constructor(MenuCartDTO.class,
 						qCart.menu_id_fk, qMenu.menu_name, qMenu.menu_price,
-	                    qCart.menu_cnt, qMenu.menu_img, qMenu.menu_info, qCart.cart_id_pk))
-				//from 메서드에는 엔티티가 아닌 프로젝션을 사용해야 함
+						qCart.menu_id_fk.count().as("menu_cnt"), qMenu.menu_img, qMenu.menu_info))
 				.from(qCart)
-				.join(qMenu).on(qMenu.menu_id_pk.eq(qCart.menu_id_fk))
+				.innerJoin(qMenu).on(qMenu.menu_id_pk.eq(qCart.menu_id_fk))
+				.groupBy(qCart.menu_id_fk, qMenu.menu_name, qMenu.menu_price, qMenu.menu_img, qMenu.menu_info)
 				.fetch();
+	}
+	
+	// cart delete
+	@Transactional
+	public void deleteToCart(Integer menu_id) {
+		QCartEntity qCart = QCartEntity.cartEntity;
+		
+		jpaQueryFactory
+		.delete(qCart)
+		.where(qCart.menu_id_fk.eq(menu_id))
+		.execute();
+	}
+	
+	// minus btn 처리
+	// 1) 우선 menu_id가 여러개일 수 있으므로 menu_id 중에 첫번째 cart_id_pk 뽑기
+	public Integer getOneCartId(Integer menu_id) {
+		QCartEntity qCart = QCartEntity.cartEntity;
+		
+		return jpaQueryFactory
+				.select(qCart.cart_id_pk)
+				.from(qCart)
+				.where(qCart.menu_id_fk.eq(menu_id))
+				.limit(1)
+				.fetchFirst();
+	}
+	
+	// 2) 추출한 cart_id_pk 값으로 delete 하기
+	@Transactional
+	public void deleteCartId(Integer cart_id) {
+		QCartEntity qCart = QCartEntity.cartEntity;
+		
+		jpaQueryFactory
+		 .delete(qCart)
+		 .where(qCart.cart_id_pk.eq((cart_id)))
+		 .execute();
 	}
 }
 

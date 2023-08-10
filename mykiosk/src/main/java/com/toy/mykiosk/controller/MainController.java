@@ -100,18 +100,19 @@ public class MainController {
 //		}
 //	}
 	
+	// 3. cart insert
 	@GetMapping("/add")
 	public String addToCart(@RequestParam("menu_id") Integer menu_id,
 			Model model) {
 		System.out.println("menu_id = " + menu_id);
 		try {
-//			this.cartService.addToCart(menu_id);
+			this.cartService.addToCart(menu_id);
 			
-			List<MenuCartDTO> cartMenuJoin = this.cartService.getAllMenuJoinCart();
+			List<MenuCartDTO> cartMenuJoin = this.cartService.getAllMenuJoinCartConstructor();
 			
-//			for(MenuCartDTO mcdto : cartMenuJoin) {
-//				System.out.println(mcdto);
-//			}
+			for(MenuCartDTO mcDto : cartMenuJoin) {
+				System.out.println(mcDto);
+			}
 			
 			model.addAttribute("cartMenuJoinList", cartMenuJoin);
 			
@@ -120,6 +121,41 @@ public class MainController {
 		catch(Exception e) {
 			return "Error adding to cart: " + e.getMessage();
 		}
+	}
+	
+	// 4. cart delete
+	@GetMapping("/delete")
+	public String deleteToCart(@RequestParam("menu_id") Integer menu_id,
+			Model model) {
+		System.out.println("menu_id = " + menu_id);
+		try {
+			this.cartService.deleteToCart(menu_id);
+			
+			List<MenuCartDTO> cartMenuJoin = this.cartService.getAllMenuJoinCartConstructor();
+			
+			model.addAttribute("cartMenuJoinList", cartMenuJoin);
+			
+			
+			return "cart_list";
+		}
+		catch(Exception e) {
+			return "Error deleting to cart: " + e.getMessage();
+		}
+	}
+	
+	// - 버튼 클릭 시 delete 처리
+	@GetMapping("/minus")
+	public String minusToCart(@RequestParam("menu_id") Integer menu_id,
+			Model model) {
+		Integer cart_id = this.cartService.getOneCartId(menu_id);
+		
+		this.cartService.deleteCartId(cart_id);
+		
+		List<MenuCartDTO> cartMenuJoin = this.cartService.getAllMenuJoinCartConstructor();
+		
+		model.addAttribute("cartMenuJoinList", cartMenuJoin);
+		
+		return "cart_list";
 	}
 }
 
