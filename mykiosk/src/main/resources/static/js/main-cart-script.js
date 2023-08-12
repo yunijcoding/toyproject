@@ -66,6 +66,21 @@ function minusBtn(menu_id){
 
 
 
+/*document.addEventListener("click", e =>  {
+    const target = e.target;
+    
+    const openModalBtn = document.getElementById("openModalBtn");
+    const modal = document.getElementById("myModal");
+
+    if(target === openModalBtn){
+		alert("order button click");
+		modal.style.display = "block";		
+    }
+    else if(target === modal){
+		alert("modal click")
+	}
+})*/
+
 
 
 

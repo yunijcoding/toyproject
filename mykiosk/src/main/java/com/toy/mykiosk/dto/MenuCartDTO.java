@@ -12,6 +12,7 @@ public class MenuCartDTO {
 	private String menu_img;
 	private String menu_info;
 	private Integer cart_id_pk;
+	private Long totalPrice;
 	
 	public MenuCartDTO(Integer menu_id_fk, String menu_name, Integer menu_price, 
 			Long menu_cnt, String menu_img, String menu_info) {

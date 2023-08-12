@@ -75,7 +75,7 @@ public class CartService {
 	}
 	
 	
-	//(TEST)
+	//cart와 menu join! => count 도출 & group by
 	public List<MenuCartDTO> getAllMenuJoinCartConstructor(){
 		QCartEntity qCart = QCartEntity.cartEntity;
 		QMenuEntity qMenu = QMenuEntity.menuEntity;
@@ -123,6 +123,50 @@ public class CartService {
 		 .delete(qCart)
 		 .where(qCart.cart_id_pk.eq((cart_id)))
 		 .execute();
+	}
+	
+	
+	//cart의 가격 총 합계 구하기
+//	public Long totPrice() {
+//		QCartEntity qCart = QCartEntity.cartEntity;
+//		QMenuEntity qMenu = QMenuEntity.menuEntity;
+//		
+//		List<MenuCartDTO> sub = jpaQueryFactory
+//									.select(Projections.fields(MenuCartDTO.class, qMenu.menu_price.sum().as("totalPrice")))
+//									.from(qCart)
+//									.innerJoin(qMenu).on(qMenu.menu_id_pk.eq(qCart.menu_id_fk))
+//									.groupBy(qCart.menu_id_fk, qMenu.menu_name, qMenu.menu_price, qMenu.menu_img, qMenu.menu_info)
+//									.fetch();
+//		
+//		return jpaQueryFactory
+//				.select(sub.totalPrice.sum())
+//				.from(sub)
+//	}
+	
+//	public Long calculateTotalSum() {
+//		QCartEntity qCart = QCartEntity.cartEntity;
+//		QMenuEntity qMenu = QMenuEntity.menuEntity;
+//
+//        // 서브쿼리 생성
+//        List<Integer> subQuery = jpaQueryFactory
+//                .select(qMenu.menu_price.sum().as("sum"))
+//                .from(qMenu, qCart)
+//                .where(qMenu.menu_id_pk.eq(qCart.menu_id_fk))
+//                .groupBy(qCart.menu_id_fk)
+//                .fetch();
+//                
+//        // 메인 쿼리
+//        Long totalSum = jpaQueryFactory
+//                .select(subQuery.sum())
+//                .from(subQuery)
+//                .fetchOne();
+//
+//        return totalSum;
+//    }
+	
+	
+	public Long getTotalPrice() {
+		return this.cartRepository.getTotalPrice();
 	}
 }
 

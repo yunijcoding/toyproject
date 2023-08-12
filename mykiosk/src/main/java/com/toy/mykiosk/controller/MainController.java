@@ -110,11 +110,16 @@ public class MainController {
 			
 			List<MenuCartDTO> cartMenuJoin = this.cartService.getAllMenuJoinCartConstructor();
 			
-			for(MenuCartDTO mcDto : cartMenuJoin) {
-				System.out.println(mcDto);
-			}
+//			for(MenuCartDTO mcDto : cartMenuJoin) {
+//				System.out.println(mcDto);
+//			}
+			
+			//여기에 총합을 나타내는 메소드를 model에 추가해서 cart_list에 같이 보내보자!
+			Long totalPrice = this.cartService.getTotalPrice();
+//			System.out.println("totalPrice = " + totalPrice);
 			
 			model.addAttribute("cartMenuJoinList", cartMenuJoin);
+			model.addAttribute("totalPrice", totalPrice);
 			
 			return "cart_list";
 		}
@@ -135,6 +140,8 @@ public class MainController {
 			
 			model.addAttribute("cartMenuJoinList", cartMenuJoin);
 			
+			Long totalPrice = this.cartService.getTotalPrice();
+			model.addAttribute("totalPrice", totalPrice);
 			
 			return "cart_list";
 		}
@@ -154,6 +161,9 @@ public class MainController {
 		List<MenuCartDTO> cartMenuJoin = this.cartService.getAllMenuJoinCartConstructor();
 		
 		model.addAttribute("cartMenuJoinList", cartMenuJoin);
+		
+		Long totalPrice = this.cartService.getTotalPrice();
+		model.addAttribute("totalPrice", totalPrice);
 		
 		return "cart_list";
 	}

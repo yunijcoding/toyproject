@@ -15,4 +15,14 @@ public interface CartRepository extends JpaRepository<CartEntity, Long>{
 			+ "	values(:menu_id)", nativeQuery = true)
 	@Modifying
 	public void addToCart(@Param(value = "menu_id") Integer menu_id);
+	
+	@Query(value = "select sum(sub.sum) "
+			+ "from "
+			+ "(select sum(menu_price) as sum "
+			+ "from menu m, cart c "
+			+ "where m.menu_id_pk = c.menu_id_fk "
+			+ "group by menu_id_fk) sub", nativeQuery = true)
+	public Long getTotalPrice();
+	
+	
 }

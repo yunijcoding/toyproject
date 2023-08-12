@@ -2,7 +2,10 @@
 <html lang="ko">
 <head>
     <title>Cart List</title>
+    
+  	<link href="/css/styles.css" rel="stylesheet">
 </head>
+
 <body>
 	<!--<div id="cart-list_wrapper">
 	    <ul th:each="cartMenuJoinList : ${cartMenuJoinList}">
@@ -37,12 +40,26 @@
 	                	Delete</button></th>
 			</tr>
 		</table>
+		<div style="text-align: right;">
+			<h3>Total Price: <span th:text="${totalPrice}"></span>
+			<button type="button" id="openModalBtn">Order</button></h3>
+		</div>
 	</div>
 	
+	<!--modal-->
+	<div id="myModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <p>This is a modal dialog.</p>
+        </div>
+    </div>
+
 <!-- 부트스트랩 스크립트 추가 -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 
+
 <!--외부 script-->
 <script src="/js/main-cart-script.js"></script>
+
 </body>
 </html>
