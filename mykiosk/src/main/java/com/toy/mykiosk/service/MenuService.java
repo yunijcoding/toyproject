@@ -31,6 +31,23 @@ public class MenuService {
 				.fetch();
 	}
 	
+	//menu_type에 따른 분류
+	public List<MenuEntity> getAllMenu(String type){
+		QMenuEntity menu = QMenuEntity.menuEntity;
+		
+		if(type.equals("all")) {
+			return jpaQueryFactory
+					.selectFrom(menu)
+					.fetch();
+		}
+		else {
+			return jpaQueryFactory
+					.selectFrom(menu)
+					.where(menu.menu_type.eq(type))
+					.fetch();
+		}
+	}
+	
 	//queryDSL test: 2000원 이상인 음료 조회
 	public List<MenuEntity> getMenuByPrice(Integer price){
 		QMenuEntity menu = QMenuEntity.menuEntity;

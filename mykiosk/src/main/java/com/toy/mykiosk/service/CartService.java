@@ -164,9 +164,19 @@ public class CartService {
 //        return totalSum;
 //    }
 	
-	
+	//cart 목록의 금액 총 합계 구하기
 	public Long getTotalPrice() {
 		return this.cartRepository.getTotalPrice();
+	}
+	
+	//cart 비우기
+	@Transactional
+	public void clearCart() {
+		QCartEntity qCart = QCartEntity.cartEntity;
+		
+		jpaQueryFactory
+		 .delete(qCart)
+		 .execute();
 	}
 }
 

@@ -16,6 +16,8 @@ public interface CartRepository extends JpaRepository<CartEntity, Long>{
 	@Modifying
 	public void addToCart(@Param(value = "menu_id") Integer menu_id);
 	
+	
+	//cart에서 menu의 total price
 	@Query(value = "select sum(sub.sum) "
 			+ "from "
 			+ "(select sum(menu_price) as sum "

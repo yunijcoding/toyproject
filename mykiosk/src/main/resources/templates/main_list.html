@@ -9,18 +9,25 @@
     <!--static 폴더가 root임!!-->
     <link href="/css/styles.css" rel="stylesheet">
 </head>
-<body>
 
+<body>
 <div class="container mt-4">
-    <div class="row">
+	<div class="tab-container mb-5">
+	    <div class="tab active" onclick="openTab(event)" id="all">All</div>
+	    <div class="tab" onclick="openTab(event)" id="caffeine">Caffeine</div>
+	    <div class="tab" onclick="openTab(event)" id="nonCaffeine">Decaf</div>
+	    <div class="tab" onclick="openTab(event)" id="dessert">Dessert</div>
+	</div>
+	
+    <div class="row" id="menu-content-wrapper">
         <!-- 카드 컴포넌트를 이용한 menu 목록 -->
         <div th:each="menuList : ${menuList}" class="col-md-3 mb-4">
             <div class="card">
-                <!--<img src="${menuList.menu_img}" class="card-img-top" th:alt="${menuList.menu_id_pk}">-->
+                <img th:src="${menuList.menu_img}" class="card-img-top" th:alt="${menuList.menu_id_pk}">
                 <div class="card-body">
-                    <!--<h5 class="card-title" th:text="${menuList.menu_name}">Name</h5>-->
-                    <p class="card-text" th:text="${menuList.menu_info}">Info</p>
-                    <p class="card-text" th:text="${menuList.menu_id_pk}">Info</p>
+                    <!--<div class="card-title" th:text="${menuList.menu_name}">Name</div>-->
+                    <!--<p class="card-text" th:text="${menuList.menu_info}"></p>-->
+                    <!--<p class="card-text" th:text="${menuList.menu_id_pk}"></p>-->
                     <!--1) button 클릭 시 menu_id 같은 pk 넘기려면 th:attr 이용 => addCartBtn 함수에서 getAttribute로 받음-->
                     <!--2) 아니면 그냥 파라미터에 menu_id를 넣으면 됨 => th:onclick 사용해야-->
                     <!--<button type="button" class="btn btn-primary" 
@@ -32,7 +39,7 @@
         </div>
     </div>
     
-    <h2 style="text-align: center;">List</h2>
+    <div class="mt-5 mb-5" style="text-align: center; font-size: 2.5rem;">List</div> 
     <div id="cart-list-main">
 		
 	</div>

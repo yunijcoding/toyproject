@@ -31,4 +31,7 @@ public class MenuEntity {
 	
 	@Column(name = "menu_img")
 	private String menu_img;
+	
+	@Column(name = "menu_type")
+	private String menu_type;
 }

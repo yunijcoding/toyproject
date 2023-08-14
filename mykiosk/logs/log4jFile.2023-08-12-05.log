@@ -1,0 +1,2 @@
+2023-08-12 17:27:01,330 [RMI TCP Connection(87)-127.0.0.1] INFO  org.springframework.boot.admin.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin(shutdown:159) - Application shutdown requested.
+2023-08-12 17:27:01,439 [RMI TCP Connection(87)-127.0.0.1] INFO  org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean(destroy:650) - Closing JPA EntityManagerFactory for persistence unit 'default'
