@@ -201,10 +201,98 @@ function openTab(e){
 	})
 }
 
+function checkStampBtn(){
+	//alert("click");
+	
+	//적립 버튼 클릭 
+	// => 핸드폰 번호, 이름 입력 시 일치하는 user 목록 보여줌(css로 show / hide)
+	// => 건너뛰기 클릭 시 다시 적립 / 결제 버튼 나타나기
+	
+	const modalBtnList = document.getElementById("modal-btn-list");
+	const modalUserDiv = document.getElementById("modal-user-wrapper");
+	
+	modalBtnList.classList.remove("show");
+	modalBtnList.classList.add("hide");
+	
+	modalUserDiv.classList.remove("hide");
+	modalUserDiv.classList.add("show");
+	
+}
 
-
-
-
+document.addEventListener("click", e => {
+	const target = e.target;
+	const userChkBtn = document.getElementById("user_check_btn");
+	const user_number = document.getElementById("user_number");
+	
+	const userListDiv = document.querySelector("#user-list");
+	
+	const userJoin = document.querySelector("#user-join");
+	const userChk = document.querySelector("#user-check");
+	const paymentBtn = document.querySelector("#payment-btn");
+	
+	const backBtn = document.getElementById("back_btn");
+	
+	if(target === userChkBtn){
+		//alert("click");
+		console.log(user_number.value);
+		
+		var formData = new FormData();
+		formData.append("user_number", user_number.value);
+		
+		const xhr = new XMLHttpRequest();
+		xhr.open("POST", "/mykiosk/userCheck");
+		xhr.onload = () => {
+			if(xhr.status === 200){
+				
+				const datas = JSON.parse(xhr.response);
+				
+				let data = "";
+				
+				if(datas.length !== 0){
+					for(let i = 0; i < datas.length; i++){
+						data += "<ul><li>" + datas[i]["user_name"];
+						data += " / " + datas[i]["user_number"];
+						data += " / " + datas[i]["user_stamp"];
+						data += "&nbsp;&nbsp;&nbsp;<input type=" + 'checkbox ';
+						data += "id=" + 'chkBox' + " value=" + datas[i]["user_id_pk"] + " />"
+						data += "</li></ul>";
+					}
+					
+					userListDiv.innerHTML = data;
+					
+					userChk.addEventListener("click", e => {
+						const chkBox = document.getElementById("chkBox");
+						console.log(chkBox.value);
+						
+						//적립하려는 사용자 id를 localStorage에 저장
+						localStorage.setItem("user_id", chkBox.value);
+					})
+				}
+				else{
+					data += "등록된 회원이 없습니다";
+					
+					userListDiv.innerHTML = data;
+				}
+			}
+		}
+		xhr.send(formData);
+	}
+	else if(target === backBtn){
+		//alert("click");
+		
+		const modalBtnList = document.getElementById("modal-btn-list");
+		const modalUserDiv = document.getElementById("modal-user-wrapper");
+		
+		modalBtnList.classList.remove("hide");
+		modalBtnList.classList.add("show");
+		
+		modalUserDiv.classList.remove("show");
+		modalUserDiv.classList.add("hide");
+		
+		user_number.value = "";
+		userListDiv.innerHTML = "";
+	}
+})
 
 
 

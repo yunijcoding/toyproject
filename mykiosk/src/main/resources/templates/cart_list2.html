@@ -7,6 +7,7 @@
 </head>
 
 <body>
+	<!--modal에서의 cart list-->
 	<div id="cart-list2-wrapper" class="container" style="margin: auto;">
 		<div id="cart-list-table">
 		    <table class="table">
@@ -29,11 +30,29 @@
 			<h3>Total Price: <span th:text="${totalPrice}"></span>
 		</div>
 		<!--어떻게 해야 모달창의 제일 아래에 위치하고 가운데 정렬이 될까-->
-		<div>
+		<div class="show" id="modal-btn-list">
 			<button type="button" class="btn btn-secondary btn-modal"
-				>적립</button>
-			<button type="button" class="btn btn-secondary btn-modal"
-				>결제</button>
+				th:onclick="'checkStampBtn()'">적립</button>
+			<button type="button" id="payment-btn" class="btn btn-secondary btn-modal"
+				th:onclick="'payment()'">결제</button>
+		</div>
+		
+		<div class="hide" id="modal-user-wrapper">
+			<form id="userForm">
+				<label for="user_number">Number:</label>
+        		<input type="text" id="user_number" name="user_number" value="번호입력">
+        		<input type="button" value="Check" id="user_check_btn">
+			</form>
+			<div id="user-list">
+			</div>
+			<div>
+				<button type="button" id="user-join" class="btn btn-secondary mt-5"
+					>회원등록</button>
+				<button type="button" id="user-check" class="btn btn-secondary mt-5"
+					>적립확인</button>
+				<button type="button" class="btn btn-secondary mt-5"
+					id="back_btn">뒤로가기</button>
+			</div>
 		</div>
 	</div>
 

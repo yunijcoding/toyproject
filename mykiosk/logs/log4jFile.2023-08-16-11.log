@@ -1,0 +1,242 @@
+2023-08-16 11:00:04,816 [File Watcher] INFO  org.springframework.boot.devtools.autoconfigure.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener(onApplicationEvent:211) - Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2023-08-16 11:00:04,865 [Thread-19] INFO  org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean(destroy:650) - Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-08-16 11:00:05,140 [restartedMain] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate(registerRepositoriesIn:138) - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-08-16 11:00:05,175 [restartedMain] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate(registerRepositoriesIn:208) - Finished Spring Data repository scanning in 32 ms. Found 3 JPA repository interfaces.
+2023-08-16 11:00:05,250 [restartedMain] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer(initialize:108) - Tomcat initialized with port(s): 8080 (http)
+2023-08-16 11:00:05,281 [restartedMain] INFO  org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext(prepareWebApplicationContext:291) - Root WebApplicationContext: initialization completed in 315 ms
+2023-08-16 11:00:05,324 [restartedMain] INFO  org.springframework.orm.jpa.persistenceunit.SpringPersistenceUnitInfo(addTransformer:87) - No LoadTimeWeaver setup: ignoring JPA class transformer
+2023-08-16 11:00:05,381 [restartedMain] INFO  org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean(buildNativeEntityManagerFactory:437) - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-08-16 11:00:05,462 [restartedMain] WARN  org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration(openEntityManagerInViewInterceptor:231) - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-08-16 11:00:05,570 [restartedMain] INFO  org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer(startServer:59) - LiveReload server is running on port 35729
+2023-08-16 11:00:05,584 [restartedMain] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer(start:220) - Tomcat started on port(s): 8080 (http) with context path ''
+2023-08-16 11:00:05,589 [restartedMain] INFO  org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener(onApplicationEvent:63) - Condition evaluation unchanged
+2023-08-16 11:00:20,902 [File Watcher] INFO  org.springframework.boot.devtools.autoconfigure.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener(onApplicationEvent:211) - Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2023-08-16 11:00:20,929 [Thread-23] INFO  org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean(destroy:650) - Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-08-16 11:00:21,222 [restartedMain] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate(registerRepositoriesIn:138) - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-08-16 11:00:21,257 [restartedMain] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate(registerRepositoriesIn:208) - Finished Spring Data repository scanning in 35 ms. Found 3 JPA repository interfaces.
+2023-08-16 11:00:21,333 [restartedMain] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer(initialize:108) - Tomcat initialized with port(s): 8080 (http)
+2023-08-16 11:00:21,369 [restartedMain] INFO  org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext(prepareWebApplicationContext:291) - Root WebApplicationContext: initialization completed in 323 ms
+2023-08-16 11:00:21,410 [restartedMain] INFO  org.springframework.orm.jpa.persistenceunit.SpringPersistenceUnitInfo(addTransformer:87) - No LoadTimeWeaver setup: ignoring JPA class transformer
+2023-08-16 11:00:21,462 [restartedMain] INFO  org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean(buildNativeEntityManagerFactory:437) - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-08-16 11:00:21,542 [restartedMain] WARN  org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration(openEntityManagerInViewInterceptor:231) - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-08-16 11:00:21,641 [restartedMain] INFO  org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer(startServer:59) - LiveReload server is running on port 35729
+2023-08-16 11:00:21,655 [restartedMain] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer(start:220) - Tomcat started on port(s): 8080 (http) with context path ''
+2023-08-16 11:00:21,662 [restartedMain] INFO  org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener(onApplicationEvent:63) - Condition evaluation unchanged
+2023-08-16 11:00:30,765 [File Watcher] INFO  org.springframework.boot.devtools.autoconfigure.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener(onApplicationEvent:211) - Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2023-08-16 11:00:30,792 [Thread-27] INFO  org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean(destroy:650) - Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-08-16 11:00:31,069 [restartedMain] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate(registerRepositoriesIn:138) - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-08-16 11:00:31,107 [restartedMain] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate(registerRepositoriesIn:208) - Finished Spring Data repository scanning in 38 ms. Found 3 JPA repository interfaces.
+2023-08-16 11:00:31,192 [restartedMain] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer(initialize:108) - Tomcat initialized with port(s): 8080 (http)
+2023-08-16 11:00:31,220 [restartedMain] INFO  org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext(prepareWebApplicationContext:291) - Root WebApplicationContext: initialization completed in 326 ms
+2023-08-16 11:00:31,264 [restartedMain] INFO  org.springframework.orm.jpa.persistenceunit.SpringPersistenceUnitInfo(addTransformer:87) - No LoadTimeWeaver setup: ignoring JPA class transformer
+2023-08-16 11:00:31,317 [restartedMain] INFO  org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean(buildNativeEntityManagerFactory:437) - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-08-16 11:00:31,391 [restartedMain] WARN  org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration(openEntityManagerInViewInterceptor:231) - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-08-16 11:00:31,492 [restartedMain] INFO  org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer(startServer:59) - LiveReload server is running on port 35729
+2023-08-16 11:00:31,502 [restartedMain] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer(start:220) - Tomcat started on port(s): 8080 (http) with context path ''
+2023-08-16 11:00:31,509 [restartedMain] INFO  org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener(onApplicationEvent:63) - Condition evaluation unchanged
+2023-08-16 11:01:22,692 [File Watcher] INFO  org.springframework.boot.devtools.autoconfigure.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener(onApplicationEvent:211) - Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2023-08-16 11:01:22,747 [Thread-31] INFO  org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean(destroy:650) - Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-08-16 11:01:23,017 [restartedMain] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate(registerRepositoriesIn:138) - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-08-16 11:01:23,050 [restartedMain] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate(registerRepositoriesIn:208) - Finished Spring Data repository scanning in 32 ms. Found 3 JPA repository interfaces.
+2023-08-16 11:01:23,131 [restartedMain] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer(initialize:108) - Tomcat initialized with port(s): 8080 (http)
+2023-08-16 11:01:23,170 [restartedMain] INFO  org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext(prepareWebApplicationContext:291) - Root WebApplicationContext: initialization completed in 323 ms
+2023-08-16 11:01:23,214 [restartedMain] INFO  org.springframework.orm.jpa.persistenceunit.SpringPersistenceUnitInfo(addTransformer:87) - No LoadTimeWeaver setup: ignoring JPA class transformer
+2023-08-16 11:01:23,270 [restartedMain] INFO  org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean(buildNativeEntityManagerFactory:437) - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-08-16 11:01:23,345 [restartedMain] WARN  org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration(openEntityManagerInViewInterceptor:231) - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-08-16 11:01:23,449 [restartedMain] INFO  org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer(startServer:59) - LiveReload server is running on port 35729
+2023-08-16 11:01:23,468 [restartedMain] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer(start:220) - Tomcat started on port(s): 8080 (http) with context path ''
+2023-08-16 11:01:23,475 [restartedMain] INFO  org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener(onApplicationEvent:63) - Condition evaluation unchanged
+2023-08-16 11:02:16,432 [File Watcher] INFO  org.springframework.boot.devtools.autoconfigure.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener(onApplicationEvent:211) - Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2023-08-16 11:02:16,461 [Thread-35] INFO  org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean(destroy:650) - Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-08-16 11:02:16,730 [restartedMain] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate(registerRepositoriesIn:138) - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-08-16 11:02:16,764 [restartedMain] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate(registerRepositoriesIn:208) - Finished Spring Data repository scanning in 34 ms. Found 3 JPA repository interfaces.
+2023-08-16 11:02:16,845 [restartedMain] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer(initialize:108) - Tomcat initialized with port(s): 8080 (http)
+2023-08-16 11:02:16,874 [restartedMain] INFO  org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext(prepareWebApplicationContext:291) - Root WebApplicationContext: initialization completed in 311 ms
+2023-08-16 11:02:16,916 [restartedMain] INFO  org.springframework.orm.jpa.persistenceunit.SpringPersistenceUnitInfo(addTransformer:87) - No LoadTimeWeaver setup: ignoring JPA class transformer
+2023-08-16 11:02:16,966 [restartedMain] INFO  org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean(buildNativeEntityManagerFactory:437) - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-08-16 11:02:17,036 [restartedMain] WARN  org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration(openEntityManagerInViewInterceptor:231) - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-08-16 11:02:17,140 [restartedMain] INFO  org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer(startServer:59) - LiveReload server is running on port 35729
+2023-08-16 11:02:17,152 [restartedMain] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer(start:220) - Tomcat started on port(s): 8080 (http) with context path ''
+2023-08-16 11:02:17,158 [restartedMain] INFO  org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener(onApplicationEvent:63) - Condition evaluation unchanged
+2023-08-16 11:02:43,519 [File Watcher] INFO  org.springframework.boot.devtools.autoconfigure.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener(onApplicationEvent:211) - Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2023-08-16 11:02:43,540 [Thread-39] INFO  org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean(destroy:650) - Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-08-16 11:02:43,820 [restartedMain] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate(registerRepositoriesIn:138) - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-08-16 11:02:43,854 [restartedMain] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate(registerRepositoriesIn:208) - Finished Spring Data repository scanning in 33 ms. Found 3 JPA repository interfaces.
+2023-08-16 11:02:43,924 [restartedMain] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer(initialize:108) - Tomcat initialized with port(s): 8080 (http)
+2023-08-16 11:02:43,954 [restartedMain] INFO  org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext(prepareWebApplicationContext:291) - Root WebApplicationContext: initialization completed in 309 ms
+2023-08-16 11:02:43,996 [restartedMain] INFO  org.springframework.orm.jpa.persistenceunit.SpringPersistenceUnitInfo(addTransformer:87) - No LoadTimeWeaver setup: ignoring JPA class transformer
+2023-08-16 11:02:44,047 [restartedMain] INFO  org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean(buildNativeEntityManagerFactory:437) - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-08-16 11:02:44,120 [restartedMain] WARN  org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration(openEntityManagerInViewInterceptor:231) - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-08-16 11:02:44,219 [restartedMain] INFO  org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer(startServer:59) - LiveReload server is running on port 35729
+2023-08-16 11:02:44,230 [restartedMain] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer(start:220) - Tomcat started on port(s): 8080 (http) with context path ''
+2023-08-16 11:02:44,238 [restartedMain] INFO  org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener(onApplicationEvent:63) - Condition evaluation unchanged
+2023-08-16 11:02:48,942 [File Watcher] INFO  org.springframework.boot.devtools.autoconfigure.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener(onApplicationEvent:211) - Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2023-08-16 11:02:48,964 [Thread-43] INFO  org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean(destroy:650) - Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-08-16 11:02:49,238 [restartedMain] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate(registerRepositoriesIn:138) - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-08-16 11:02:49,271 [restartedMain] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate(registerRepositoriesIn:208) - Finished Spring Data repository scanning in 34 ms. Found 3 JPA repository interfaces.
+2023-08-16 11:02:49,344 [restartedMain] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer(initialize:108) - Tomcat initialized with port(s): 8080 (http)
+2023-08-16 11:02:49,383 [restartedMain] INFO  org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext(prepareWebApplicationContext:291) - Root WebApplicationContext: initialization completed in 318 ms
+2023-08-16 11:02:49,428 [restartedMain] INFO  org.springframework.orm.jpa.persistenceunit.SpringPersistenceUnitInfo(addTransformer:87) - No LoadTimeWeaver setup: ignoring JPA class transformer
+2023-08-16 11:02:49,476 [restartedMain] INFO  org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean(buildNativeEntityManagerFactory:437) - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-08-16 11:02:49,541 [restartedMain] WARN  org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext(refresh:616) - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'userService': Lookup method resolution failed
+2023-08-16 11:02:49,541 [restartedMain] INFO  org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean(destroy:650) - Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-08-16 11:02:49,550 [restartedMain] INFO  org.springframework.boot.autoconfigure.logging.ConditionEvaluationReportLogger(logMessage:82) - 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2023-08-16 11:02:49,570 [restartedMain] ERROR org.springframework.boot.SpringApplication(reportFailure:824) - Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'userService': Lookup method resolution failed
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.checkLookupMethods(AutowiredAnnotationBeanPostProcessor.java:472) ~[spring-beans-6.0.11.jar:6.0.11]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.determineCandidateConstructors(AutowiredAnnotationBeanPostProcessor.java:342) ~[spring-beans-6.0.11.jar:6.0.11]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.determineConstructorsFromBeanPostProcessors(AbstractAutowireCapableBeanFactory.java:1291) ~[spring-beans-6.0.11.jar:6.0.11]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1186) ~[spring-beans-6.0.11.jar:6.0.11]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:560) ~[spring-beans-6.0.11.jar:6.0.11]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:520) ~[spring-beans-6.0.11.jar:6.0.11]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:326) ~[spring-beans-6.0.11.jar:6.0.11]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-6.0.11.jar:6.0.11]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:324) ~[spring-beans-6.0.11.jar:6.0.11]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200) ~[spring-beans-6.0.11.jar:6.0.11]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:973) ~[spring-beans-6.0.11.jar:6.0.11]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:942) ~[spring-context-6.0.11.jar:6.0.11]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:608) ~[spring-context-6.0.11.jar:6.0.11]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146) ~[spring-boot-3.1.2.jar:3.1.2]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:734) [spring-boot-3.1.2.jar:3.1.2]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:436) [spring-boot-3.1.2.jar:3.1.2]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:312) [spring-boot-3.1.2.jar:3.1.2]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1306) [spring-boot-3.1.2.jar:3.1.2]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1295) [spring-boot-3.1.2.jar:3.1.2]
+	at com.toy.mykiosk.MykioskApplication.main(MykioskApplication.java:10) [main/:?]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:?]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[?:?]
+	at jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:?]
+	at java.lang.reflect.Method.invoke(Method.java:568) ~[?:?]
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:50) [spring-boot-devtools-3.1.2.jar:3.1.2]
+Caused by: java.lang.IllegalStateException: Failed to introspect Class [com.toy.mykiosk.service.UserService] from ClassLoader [org.springframework.boot.devtools.restart.classloader.RestartClassLoader@7a2e7c1e]
+	at org.springframework.util.ReflectionUtils.getDeclaredMethods(ReflectionUtils.java:483) ~[spring-core-6.0.11.jar:6.0.11]
+	at org.springframework.util.ReflectionUtils.doWithLocalMethods(ReflectionUtils.java:320) ~[spring-core-6.0.11.jar:6.0.11]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.checkLookupMethods(AutowiredAnnotationBeanPostProcessor.java:450) ~[spring-beans-6.0.11.jar:6.0.11]
+	... 24 more
+Caused by: java.lang.NoClassDefFoundError: List
+	at java.lang.Class.getDeclaredMethods0(Native Method) ~[?:?]
+	at java.lang.Class.privateGetDeclaredMethods(Class.java:3402) ~[?:?]
+	at java.lang.Class.getDeclaredMethods(Class.java:2504) ~[?:?]
+	at org.springframework.util.ReflectionUtils.getDeclaredMethods(ReflectionUtils.java:465) ~[spring-core-6.0.11.jar:6.0.11]
+	at org.springframework.util.ReflectionUtils.doWithLocalMethods(ReflectionUtils.java:320) ~[spring-core-6.0.11.jar:6.0.11]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.checkLookupMethods(AutowiredAnnotationBeanPostProcessor.java:450) ~[spring-beans-6.0.11.jar:6.0.11]
+	... 24 more
+Caused by: java.lang.ClassNotFoundException: List
+	at jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:641) ~[?:?]
+	at jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:188) ~[?:?]
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:520) ~[?:?]
+	at java.lang.Class.forName0(Native Method) ~[?:?]
+	at java.lang.Class.forName(Class.java:467) ~[?:?]
+	at org.springframework.boot.devtools.restart.classloader.RestartClassLoader.loadClass(RestartClassLoader.java:121) ~[spring-boot-devtools-3.1.2.jar:3.1.2]
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:520) ~[?:?]
+	at java.lang.Class.getDeclaredMethods0(Native Method) ~[?:?]
+	at java.lang.Class.privateGetDeclaredMethods(Class.java:3402) ~[?:?]
+	at java.lang.Class.getDeclaredMethods(Class.java:2504) ~[?:?]
+	at org.springframework.util.ReflectionUtils.getDeclaredMethods(ReflectionUtils.java:465) ~[spring-core-6.0.11.jar:6.0.11]
+	at org.springframework.util.ReflectionUtils.doWithLocalMethods(ReflectionUtils.java:320) ~[spring-core-6.0.11.jar:6.0.11]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.checkLookupMethods(AutowiredAnnotationBeanPostProcessor.java:450) ~[spring-beans-6.0.11.jar:6.0.11]
+	... 24 more
+2023-08-16 11:02:53,484 [restartedMain] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate(registerRepositoriesIn:138) - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-08-16 11:02:53,518 [restartedMain] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate(registerRepositoriesIn:208) - Finished Spring Data repository scanning in 32 ms. Found 3 JPA repository interfaces.
+2023-08-16 11:02:53,590 [restartedMain] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer(initialize:108) - Tomcat initialized with port(s): 8080 (http)
+2023-08-16 11:02:53,620 [restartedMain] INFO  org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext(prepareWebApplicationContext:291) - Root WebApplicationContext: initialization completed in 309 ms
+2023-08-16 11:02:53,661 [restartedMain] INFO  org.springframework.orm.jpa.persistenceunit.SpringPersistenceUnitInfo(addTransformer:87) - No LoadTimeWeaver setup: ignoring JPA class transformer
+2023-08-16 11:02:53,708 [restartedMain] INFO  org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean(buildNativeEntityManagerFactory:437) - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-08-16 11:02:53,782 [restartedMain] WARN  org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration(openEntityManagerInViewInterceptor:231) - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-08-16 11:02:53,880 [restartedMain] INFO  org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer(startServer:59) - LiveReload server is running on port 35729
+2023-08-16 11:02:53,892 [restartedMain] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer(start:220) - Tomcat started on port(s): 8080 (http) with context path ''
+2023-08-16 11:02:53,899 [restartedMain] INFO  org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener(onApplicationEvent:63) - Condition evaluation unchanged
+2023-08-16 11:03:34,198 [File Watcher] INFO  org.springframework.boot.devtools.autoconfigure.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener(onApplicationEvent:211) - Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2023-08-16 11:03:34,240 [Thread-47] INFO  org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean(destroy:650) - Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-08-16 11:03:34,514 [restartedMain] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate(registerRepositoriesIn:138) - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-08-16 11:03:34,547 [restartedMain] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate(registerRepositoriesIn:208) - Finished Spring Data repository scanning in 31 ms. Found 3 JPA repository interfaces.
+2023-08-16 11:03:34,619 [restartedMain] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer(initialize:108) - Tomcat initialized with port(s): 8080 (http)
+2023-08-16 11:03:34,647 [restartedMain] INFO  org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext(prepareWebApplicationContext:291) - Root WebApplicationContext: initialization completed in 301 ms
+2023-08-16 11:03:34,688 [restartedMain] INFO  org.springframework.orm.jpa.persistenceunit.SpringPersistenceUnitInfo(addTransformer:87) - No LoadTimeWeaver setup: ignoring JPA class transformer
+2023-08-16 11:03:34,732 [restartedMain] INFO  org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean(buildNativeEntityManagerFactory:437) - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-08-16 11:03:34,803 [restartedMain] WARN  org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration(openEntityManagerInViewInterceptor:231) - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-08-16 11:03:34,905 [restartedMain] INFO  org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer(startServer:59) - LiveReload server is running on port 35729
+2023-08-16 11:03:34,916 [restartedMain] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer(start:220) - Tomcat started on port(s): 8080 (http) with context path ''
+2023-08-16 11:03:34,921 [restartedMain] INFO  org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener(onApplicationEvent:63) - Condition evaluation unchanged
+2023-08-16 11:03:40,734 [File Watcher] INFO  org.springframework.boot.devtools.autoconfigure.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener(onApplicationEvent:211) - Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2023-08-16 11:03:40,763 [Thread-54] INFO  org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean(destroy:650) - Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-08-16 11:03:41,041 [restartedMain] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate(registerRepositoriesIn:138) - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-08-16 11:03:41,073 [restartedMain] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate(registerRepositoriesIn:208) - Finished Spring Data repository scanning in 30 ms. Found 3 JPA repository interfaces.
+2023-08-16 11:03:41,152 [restartedMain] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer(initialize:108) - Tomcat initialized with port(s): 8080 (http)
+2023-08-16 11:03:41,181 [restartedMain] INFO  org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext(prepareWebApplicationContext:291) - Root WebApplicationContext: initialization completed in 308 ms
+2023-08-16 11:03:41,226 [restartedMain] INFO  org.springframework.orm.jpa.persistenceunit.SpringPersistenceUnitInfo(addTransformer:87) - No LoadTimeWeaver setup: ignoring JPA class transformer
+2023-08-16 11:03:41,277 [restartedMain] INFO  org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean(buildNativeEntityManagerFactory:437) - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-08-16 11:03:41,347 [restartedMain] WARN  org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration(openEntityManagerInViewInterceptor:231) - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-08-16 11:03:41,445 [restartedMain] INFO  org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer(startServer:59) - LiveReload server is running on port 35729
+2023-08-16 11:03:41,457 [restartedMain] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer(start:220) - Tomcat started on port(s): 8080 (http) with context path ''
+2023-08-16 11:03:41,462 [restartedMain] INFO  org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener(onApplicationEvent:63) - Condition evaluation unchanged
+2023-08-16 11:04:25,074 [File Watcher] INFO  org.springframework.boot.devtools.autoconfigure.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener(onApplicationEvent:211) - Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2023-08-16 11:04:25,097 [Thread-58] INFO  org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean(destroy:650) - Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-08-16 11:04:25,374 [restartedMain] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate(registerRepositoriesIn:138) - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-08-16 11:04:25,409 [restartedMain] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate(registerRepositoriesIn:208) - Finished Spring Data repository scanning in 33 ms. Found 3 JPA repository interfaces.
+2023-08-16 11:04:25,486 [restartedMain] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer(initialize:108) - Tomcat initialized with port(s): 8080 (http)
+2023-08-16 11:04:25,515 [restartedMain] INFO  org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext(prepareWebApplicationContext:291) - Root WebApplicationContext: initialization completed in 316 ms
+2023-08-16 11:04:25,558 [restartedMain] INFO  org.springframework.orm.jpa.persistenceunit.SpringPersistenceUnitInfo(addTransformer:87) - No LoadTimeWeaver setup: ignoring JPA class transformer
+2023-08-16 11:04:25,610 [restartedMain] INFO  org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean(buildNativeEntityManagerFactory:437) - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-08-16 11:04:25,685 [restartedMain] WARN  org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration(openEntityManagerInViewInterceptor:231) - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-08-16 11:04:25,779 [restartedMain] INFO  org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer(startServer:59) - LiveReload server is running on port 35729
+2023-08-16 11:04:25,792 [restartedMain] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer(start:220) - Tomcat started on port(s): 8080 (http) with context path ''
+2023-08-16 11:04:25,796 [restartedMain] INFO  org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener(onApplicationEvent:63) - Condition evaluation unchanged
+2023-08-16 11:04:35,838 [File Watcher] INFO  org.springframework.boot.devtools.autoconfigure.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener(onApplicationEvent:211) - Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2023-08-16 11:04:35,863 [Thread-62] INFO  org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean(destroy:650) - Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-08-16 11:04:36,130 [restartedMain] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate(registerRepositoriesIn:138) - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-08-16 11:04:36,161 [restartedMain] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate(registerRepositoriesIn:208) - Finished Spring Data repository scanning in 30 ms. Found 3 JPA repository interfaces.
+2023-08-16 11:04:36,242 [restartedMain] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer(initialize:108) - Tomcat initialized with port(s): 8080 (http)
+2023-08-16 11:04:36,276 [restartedMain] INFO  org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext(prepareWebApplicationContext:291) - Root WebApplicationContext: initialization completed in 307 ms
+2023-08-16 11:04:36,322 [restartedMain] INFO  org.springframework.orm.jpa.persistenceunit.SpringPersistenceUnitInfo(addTransformer:87) - No LoadTimeWeaver setup: ignoring JPA class transformer
+2023-08-16 11:04:36,372 [restartedMain] INFO  org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean(buildNativeEntityManagerFactory:437) - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-08-16 11:04:36,439 [restartedMain] WARN  org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration(openEntityManagerInViewInterceptor:231) - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-08-16 11:04:36,537 [restartedMain] INFO  org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer(startServer:59) - LiveReload server is running on port 35729
+2023-08-16 11:04:36,547 [restartedMain] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer(start:220) - Tomcat started on port(s): 8080 (http) with context path ''
+2023-08-16 11:04:36,555 [restartedMain] INFO  org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener(onApplicationEvent:63) - Condition evaluation unchanged
+2023-08-16 11:05:28,335 [File Watcher] INFO  org.springframework.boot.devtools.autoconfigure.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener(onApplicationEvent:211) - Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2023-08-16 11:05:28,367 [Thread-66] INFO  org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean(destroy:650) - Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-08-16 11:05:28,639 [restartedMain] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate(registerRepositoriesIn:138) - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-08-16 11:05:28,674 [restartedMain] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate(registerRepositoriesIn:208) - Finished Spring Data repository scanning in 35 ms. Found 3 JPA repository interfaces.
+2023-08-16 11:05:28,749 [restartedMain] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer(initialize:108) - Tomcat initialized with port(s): 8080 (http)
+2023-08-16 11:05:28,779 [restartedMain] INFO  org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext(prepareWebApplicationContext:291) - Root WebApplicationContext: initialization completed in 310 ms
+2023-08-16 11:05:28,825 [restartedMain] INFO  org.springframework.orm.jpa.persistenceunit.SpringPersistenceUnitInfo(addTransformer:87) - No LoadTimeWeaver setup: ignoring JPA class transformer
+2023-08-16 11:05:28,876 [restartedMain] INFO  org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean(buildNativeEntityManagerFactory:437) - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-08-16 11:05:28,946 [restartedMain] WARN  org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration(openEntityManagerInViewInterceptor:231) - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-08-16 11:05:29,067 [restartedMain] INFO  org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer(startServer:59) - LiveReload server is running on port 35729
+2023-08-16 11:05:29,082 [restartedMain] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer(start:220) - Tomcat started on port(s): 8080 (http) with context path ''
+2023-08-16 11:05:29,090 [restartedMain] INFO  org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener(onApplicationEvent:63) - Condition evaluation unchanged
+2023-08-16 11:05:32,856 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet(initServletBean:532) - Initializing Servlet 'dispatcherServlet'
+2023-08-16 11:05:32,858 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet(initServletBean:554) - Completed initialization in 1 ms
+2023-08-16 11:05:39,805 [http-nio-8080-exec-4] WARN  org.springframework.core.LocalVariableTableParameterNameDiscoverer(inspectClass:123) - Using deprecated '-debug' fallback for parameter name resolution. Compile the affected code with '-parameters' instead or avoid its introspection: com.toy.mykiosk.controller.MainController
+2023-08-16 11:07:08,494 [File Watcher] INFO  org.springframework.boot.devtools.autoconfigure.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener(onApplicationEvent:211) - Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2023-08-16 11:07:08,526 [Thread-70] INFO  org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean(destroy:650) - Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-08-16 11:07:08,807 [restartedMain] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate(registerRepositoriesIn:138) - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-08-16 11:07:08,841 [restartedMain] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate(registerRepositoriesIn:208) - Finished Spring Data repository scanning in 33 ms. Found 3 JPA repository interfaces.
+2023-08-16 11:07:08,915 [restartedMain] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer(initialize:108) - Tomcat initialized with port(s): 8080 (http)
+2023-08-16 11:07:08,948 [restartedMain] INFO  org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext(prepareWebApplicationContext:291) - Root WebApplicationContext: initialization completed in 318 ms
+2023-08-16 11:07:08,988 [restartedMain] INFO  org.springframework.orm.jpa.persistenceunit.SpringPersistenceUnitInfo(addTransformer:87) - No LoadTimeWeaver setup: ignoring JPA class transformer
+2023-08-16 11:07:09,035 [restartedMain] INFO  org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean(buildNativeEntityManagerFactory:437) - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-08-16 11:07:09,103 [restartedMain] WARN  org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration(openEntityManagerInViewInterceptor:231) - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-08-16 11:07:09,216 [restartedMain] INFO  org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer(startServer:59) - LiveReload server is running on port 35729
+2023-08-16 11:07:09,226 [restartedMain] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer(start:220) - Tomcat started on port(s): 8080 (http) with context path ''
+2023-08-16 11:07:09,231 [restartedMain] INFO  org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener(onApplicationEvent:63) - Condition evaluation unchanged
+2023-08-16 11:07:12,936 [File Watcher] INFO  org.springframework.boot.devtools.autoconfigure.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener(onApplicationEvent:211) - Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2023-08-16 11:07:12,958 [Thread-74] INFO  org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean(destroy:650) - Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-08-16 11:07:13,236 [restartedMain] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate(registerRepositoriesIn:138) - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-08-16 11:07:13,270 [restartedMain] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate(registerRepositoriesIn:208) - Finished Spring Data repository scanning in 32 ms. Found 3 JPA repository interfaces.
+2023-08-16 11:07:13,365 [restartedMain] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer(initialize:108) - Tomcat initialized with port(s): 8080 (http)
+2023-08-16 11:07:13,411 [restartedMain] INFO  org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext(prepareWebApplicationContext:291) - Root WebApplicationContext: initialization completed in 343 ms
+2023-08-16 11:07:13,463 [restartedMain] INFO  org.springframework.orm.jpa.persistenceunit.SpringPersistenceUnitInfo(addTransformer:87) - No LoadTimeWeaver setup: ignoring JPA class transformer
+2023-08-16 11:07:13,511 [restartedMain] INFO  org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean(buildNativeEntityManagerFactory:437) - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-08-16 11:07:13,583 [restartedMain] WARN  org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration(openEntityManagerInViewInterceptor:231) - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-08-16 11:07:13,685 [restartedMain] INFO  org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer(startServer:59) - LiveReload server is running on port 35729
+2023-08-16 11:07:13,697 [restartedMain] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer(start:220) - Tomcat started on port(s): 8080 (http) with context path ''
+2023-08-16 11:07:13,706 [restartedMain] INFO  org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener(onApplicationEvent:63) - Condition evaluation unchanged
+2023-08-16 11:07:14,279 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet(initServletBean:532) - Initializing Servlet 'dispatcherServlet'
+2023-08-16 11:07:14,280 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet(initServletBean:554) - Completed initialization in 1 ms
+2023-08-16 11:07:21,359 [http-nio-8080-exec-4] WARN  org.springframework.core.LocalVariableTableParameterNameDiscoverer(inspectClass:123) - Using deprecated '-debug' fallback for parameter name resolution. Compile the affected code with '-parameters' instead or avoid its introspection: com.toy.mykiosk.controller.MainController
+2023-08-16 11:45:04,540 [RMI TCP Connection(89)-127.0.0.1] INFO  org.springframework.boot.admin.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin(shutdown:159) - Application shutdown requested.
+2023-08-16 11:45:04,580 [RMI TCP Connection(89)-127.0.0.1] INFO  org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean(destroy:650) - Closing JPA EntityManagerFactory for persistence unit 'default'

@@ -15,8 +15,10 @@ import org.springframework.web.bind.annotation.ResponseBody;
 
 import com.toy.mykiosk.dto.MenuCartDTO;
 import com.toy.mykiosk.entity.MenuEntity;
+import com.toy.mykiosk.entity.UserEntity;
 import com.toy.mykiosk.service.CartService;
 import com.toy.mykiosk.service.MenuService;
+import com.toy.mykiosk.service.UserService;
 
 @Controller
 @RequestMapping("/mykiosk")
@@ -27,6 +29,9 @@ public class MainController {
 	
 	@Autowired
 	private CartService cartService;
+	
+	@Autowired
+	private UserService userService;
 	
 	//Log4j2 Logger
 	private final Logger logger = LogManager.getLogger(MainController.class);
@@ -72,7 +77,7 @@ public class MainController {
 		List<MenuEntity> menuList = this.menuService.getAllMenu();
 		
 		for(MenuEntity me : menuList) {
-			System.out.println("image url = " + me.getMenu_img());
+			System.out.println("image url = " + 	me.getMenu_img());
 		}
 		
 		model.addAttribute("menuList", menuList);
@@ -192,6 +197,22 @@ public class MainController {
 		model.addAttribute("totalPrice", totalPrice);
 		
 		return "cart_list";
+	}
+	
+	
+	//modal에서 user check
+	@PostMapping("/userCheck")
+	@ResponseBody
+	public List<UserEntity> userCheck(@RequestParam String user_number) {
+		System.out.println("user_number = " + user_number);
+		
+		List<UserEntity> getUser = this.userService.getUser(user_number);
+		
+		for(UserEntity ue : getUser) {
+			System.out.println(ue);
+		}
+		
+		return getUser;
 	}
 }
 
